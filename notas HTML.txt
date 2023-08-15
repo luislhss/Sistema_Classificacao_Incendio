@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classificação de Segurança</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* ... (Estilos CSS) ... */
+    </style>
+</head>
+<body>
+<fieldset>
+    <div class="container">
+        <!-- Seleção de Estado -->
+        <h2>Selecione o Estado:</h2>
+        <form>
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado">
+                <!-- Opções de estado ... -->
+            </select>
+
+    <!-- Seleção de Ocupação -->
+    <h2>Selecione a Ocupação:</h2>
+        <label for="ocupacao">Ocupação:</label>
+            <select id="ocupacao" name="ocupacao" onchange="atualizarDivisao()">
+                <!-- Opções de ocupação ... -->
+            </select>
+        
+    <!-- Seleção de Divisão -->
+    <div class="container">
+        <h2>Selecione a Divisão:</h2>
+            <label for="divisao">Divisão:</label>
+            <select id="divisao" name="divisao"></select>
+        
+    <!-- Descrição da Divisão -->
+    <fieldset>
+        <div id="descricaoDivisaoContainer"></div>
+    </fieldset>
+
+    <!-- Seleção de Altura -->
+    <h2>Selecione a Altura:</h2>
+        <label for="altura">Altura:</label>
+            <select id="altura" name="altura">
+                <!-- Opções de altura ... -->
+            </select>
+            <br><br>
+
+    <!-- Botões para mostrar medidas -->
+    <div id="botoesContainer">           
+        <input type="button" value="Mostrar Medidas" onclick="mostrarMedidas()">
+    </div>
+
+    <!-- Container para exibir medidas de segurança -->
+    <fieldset>
+        <div id="medidasContainer">
+            <!-- Medidas de segurança serão exibidas aqui -->
+        </div>
+    </fieldset>
+
+    </div>
+    </div>
+    </fieldset>
+
+    </form>
+        
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+   
+body {
+    background-color: #ffa500; /* Laranja cor de raposa */
+    color: #fff; /* Texto branco */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="button"] {
+    background-color: #fff;
+    border: none;
+    color: #ffa500;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #f2f2f2;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ff0000; /* Linhas de tabela em vermelho */
+}
+
+th {
+    background-color: #ffa500; /* Laranja cor de raposa */
+    color: #fff; /* Texto branco */
+}
+
+#descricaoDivisaoContainer, #medidasContainer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    resize: vertical;
+    min-width: 60%;
+    max-width: 100%;
+}
+
+#altura {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    form, table {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 601px) {
+    body {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.gray-text {
+    color: gray;
+}
+
+/* Novo estilo para centralizar os botões */
+#botoesContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Adiciona espaço acima dos botões */
+    margin-bottom: 20px; /* Adiciona espaço abaixo dos botões */
+}
+
+/* Adiciona espaço entre os botões */
+#botoesContainer input[type="button"] {
+    margin-right: 10px; /* Espaço entre os botões */
+}
+
+/* Remove margem direita do último botão para evitar espaço extra */
+#botoesContainer input[type="button"]:last-child {
+    margin-right: 0;
+}
+

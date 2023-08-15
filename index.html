@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classificação de Segurança</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <fieldset>
+    <div class="container">
+        <h2>Selecione o Estado:</h2>
+        <form>
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado">
+                <option value="">Selecione um estado</option>
+                <option value="Bahia">Bahia</option>
+                <option value="São Paulo" class="gray-text">São Paulo (Breve)</option>
+                <option value="Minas Gerais" class="gray-text">Minas Gerais (Breve)</option>
+            </select>
+
+        
+
+        <h2>Selecione a Ocupação:</h2>
+        
+            <label for="ocupacao">Ocupação:</label>
+            <select id="ocupacao" name="ocupacao">
+                <option value=""></option>
+                <option value="Residencial">Residencial</option>
+                <option value="Serviço de Hospedagem">Serviço de Hospedagem</option>
+            </select>
+        
+        <div class="container">
+            <h2>Selecione a Divisão:</h2>
+         
+                <label for="divisao">Divisão:</label>
+                <select id="divisao" name="divisao"></select>
+        
+
+    <fieldset>
+                 <div id="descricaoDivisaoContainer"></div>
+
+    </fieldset>
+                       
+            <h2>Selecione a Altura:</h2>
+          
+                <label for="altura">Altura:</label>
+                <select id="altura" name="altura">
+                    <option value=""></option>
+                    <option value="Térrea">Térrea</option>
+                    <option value="H ≤ 6">H ≤ 6</option>
+                    <option value="6 < H ≤ 12">6 < H ≤ 12</option>
+                    <option value="12 < H ≤ 23">12 < H ≤ 23</option>
+                    <option value="23 < H ≤ 30">23 < H ≤ 30</option>
+                    <option value="Acima de 30">Acima de 30</option>
+                </select>
+                <br><br>
+
+          <!-- Contêiner para os botões -->
+          <div id="botoesContainer">           
+                <input type="button" value="Mostrar Medidas" onclick="mostrarMedidas()">
+                
+            </div>
+             <!-- Fim do contêiner dos botões -->  
+
+
+    <fieldset>
+            <div id="medidasContainer"></div>
+    </fieldset>
+
+        </div>
+    </div>
+
+        </form>
+        
+    <script src="main.js"></script>
+</body>
+</html>

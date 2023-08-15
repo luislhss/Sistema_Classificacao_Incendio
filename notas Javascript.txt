@@ -1,0 +1,52 @@
+// Variáveis globais para armazenar seleções
+var estadoSelecionado = "";
+var ocupacaoSelecionada = "";
+var divisaoSelecionada = "";
+var alturaSelecionada = "";
+
+// Listas de medidas e alturas para diferentes divisões
+var medidas_tabela6A = [...];
+var altura_tabela6A = [...];
+var medidas_tabela6B = [...];
+var altura_tabela6B = [...];
+// ...
+
+// Função para atualizar a página com a seleção do estado
+function atualizarPagina() {
+    // ... (Código para atualizar a página) ...
+}
+
+// Evento de mudança para o select de estado
+var estadoSelect = document.getElementById("estado");
+estadoSelect.addEventListener("change", atualizarPagina);
+
+// Recuperar a última seleção do estado do armazenamento local
+var estadoSelecionado = localStorage.getItem("estadoSelecionado");
+if (estadoSelecionado) {
+    estadoSelect.value = estadoSelecionado;
+}
+
+// Evento de mudança para o select de ocupação
+var ocupacaoSelect = document.getElementById("ocupacao");
+ocupacaoSelect.addEventListener("change", atualizarDivisao);
+
+// Função para atualizar a seleção de divisão com base na ocupação selecionada
+function atualizarDivisao() {
+    // ... (Código para atualizar a seleção de divisão) ...
+    atualizarDescricaoDivisao();
+}
+
+// Função para atualizar a descrição da divisão selecionada
+function atualizarDescricaoDivisao() {
+    // ... (Código para atualizar a descrição da divisão) ...
+}
+
+// Função para mostrar medidas de segurança
+function mostrarMedidas() {
+    // ... (Código para mostrar as medidas de segurança) ...
+}
+
+// Função para obter medidas para uma altura específica
+function getMedidasParaAltura(alturaMatriz, indiceAltura, medidasTabela) {
+    // ... (Código para obter medidas com base na altura) ...
+}
