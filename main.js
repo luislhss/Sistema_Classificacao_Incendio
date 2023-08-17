@@ -31,6 +31,7 @@ var altura_tabela6A = [
 var medidas_tabela6B = [
     "Acesso de Viatura na Edificação",
     "Segurança Estrutural contra Incêndio",
+    "Compartimentação Horizontal (Áreas)",
     "Compartimentação Vertical",
     "Controle de Materiais de Acabamento",
     "Saídas de Emergência",
@@ -60,9 +61,47 @@ var altura_tabela6B = [
     [1, 1, 1, 1, 1, 1],
     [1, 1, 1, 1, 1, 1],
     [1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1],
     [0, 0, 0, 0, 1, 1],
     [0, 0, 0, 0, 0, 1]
 
+];
+
+var medidas_tabela6C = [
+    "Acesso de Viatura na Edificação",
+    "Segurança Estrutural contra Incêndio",
+    "Compartimentação Horizontal (Áreas)",
+    "Compartimentação Vertical",
+    "Controle de Materiais de Acabamento",
+    "Saídas de Emergência",
+    "Plano de Emergência",
+    "Brigada de Incêndio",
+    "Iluminação de Emergência",
+    "Detecção de Incêndio",
+    "Alarme de Incêndio",
+    "Sinalização de Emergência",
+    "Extintores",
+    "Hidrante e Mangotinhos",
+    "Chuveiros Automáticos",
+    "Controle de Fumaça"
+];
+
+var altura_tabela6C = [
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1],
+    [0, 0, 0, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1],
+    [0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 0, 0, 1]
 ];
 
 
@@ -156,6 +195,20 @@ function atualizarDivisao() {
             option.text = divisoesHospedagem[i].text;
             divisaoSelect.appendChild(option);
         }
+    } else if (ocupacaoSelecionada === "Comercial") {
+        var divisoesHospedagem = [
+            { value: "", text: "" }, // Opção vazia
+            { value: "C-1", text: "C-1 - Comércio com baixa carga de incêndio" },
+            { value: "C-2", text: "C-2 - Comércio com média e alta carga de incêndio" },
+            { value: "C-3", text: "C-3 - Shopping centers" }
+        ];
+
+        for (var i = 0; i < divisoesHospedagem.length; i++) {
+            var option = document.createElement("option");
+            option.value = divisoesHospedagem[i].value;
+            option.text = divisoesHospedagem[i].text;
+            divisaoSelect.appendChild(option);
+        }
     } 
 
     limparCamposDivisaoAltura();
@@ -185,15 +238,21 @@ function atualizarDescricaoDivisao() {
     } else if (divisaoSelecionada === "A-3") {
         descricao = "Habitação coletiva";
         exemplos = "Pensionatos, internatos, alojamentos, mosteiros, conventos, residências geriátricas. Capacidade máxima de 16 leitos";
-    } else if (divisaoSelecionada === "A-3") {
-        descricao = "Habitação coletiva";
-        exemplos = "Pensionatos, internatos, alojamentos, mosteiros, conventos, residências geriátricas. Capacidade máxima de 16 leitos";
     } else if (divisaoSelecionada === "B-1") {
         descricao = "Hotel e assemelhado";
         exemplos = "Hotéis, motéis, pensões, hospedarias, pousadas, albergues, casas de cômodos, divisão A-3 com mais de 16 leitos";
     } else if (divisaoSelecionada === "B-2") {
         descricao = "Hotel residencial";
         exemplos = "Hotéis e assemelhados com cozinha própria nos apartamentos (incluem-se apart-hotéis, flats, hotéis residenciais)";
+    } else if (divisaoSelecionada === "C-1") {
+        descricao = "Comércio com baixa carga de incêndio";
+        exemplos = "Artigos de metal, louças, artigos hospitalares e Outros";
+    } else if (divisaoSelecionada === "C-2") {
+        descricao = "Comércio com média e alta carga de incêndio";
+        exemplos = "Edifícios de lojas de departamentos, magazines, armarinhos, galerias comerciais, supermercados em geral, mercados e outros";
+    } else if (divisaoSelecionada === "C-3") {
+        descricao = "Shopping centers";
+        exemplos = "Centro de compras em geral (shopping centers)";
     }
 
     var descricaoElement = document.createElement("p");
@@ -240,7 +299,16 @@ function mostrarMedidas() {
     } else if (divisaoSelecionada === "B-2") {
         descricao = "Hotel residencial";
         exemplos = "Hotéis e assemelhados com cozinha própria nos apartamentos (incluem-se apart-hotéis, flats, hotéis residenciais)";
-    } 
+    } else if (divisaoSelecionada === "C-1") {
+        descricao = "Comércio com baixa carga de incêndio";
+        exemplos = "Artigos de metal, louças, artigos hospitalares e Outros";
+    } else if (divisaoSelecionada === "C-2") {
+        descricao = "Comércio com média e alta carga de incêndio";
+        exemplos = "Edifícios de lojas de departamentos, magazines, armarinhos, galerias comerciais, supermercados em geral, mercados e outros";
+    } else if (divisaoSelecionada === "C-3") {
+        descricao = "Shopping centers";
+        exemplos = "Centro de compras em geral (shopping centers)";
+    }
      
     var descricaoElement = document.createElement("p");
     descricaoElement.textContent = "Descrição: " + descricao;
@@ -267,9 +335,7 @@ function mostrarMedidas() {
                 medidasParaMostrar = getMedidasParaAltura(altura_tabela6A, 5);
             }
         }
-    }
-
-    if (estadoSelecionado === "Bahia" && ocupacaoSelecionada === "Serviço de Hospedagem") {
+    } else if (estadoSelecionado === "Bahia" && ocupacaoSelecionada === "Serviço de Hospedagem") {
         if (divisaoSelecionada === "B-1" || divisaoSelecionada === "B-2") {
             if (alturaSelecionada === "Térrea") {
                 medidasParaMostrar = getMedidasParaAltura(altura_tabela6B, 0);
@@ -283,6 +349,22 @@ function mostrarMedidas() {
                 medidasParaMostrar = getMedidasParaAltura(altura_tabela6B, 4);
             } else if (alturaSelecionada === "Acima de 30") {
                 medidasParaMostrar = getMedidasParaAltura(altura_tabela6B, 5);
+            }
+        }
+    } else if (estadoSelecionado === "Bahia" && ocupacaoSelecionada === "Comercial") {
+        if (divisaoSelecionada === "C-1" || divisaoSelecionada === "C-2" || divisaoSelecionada === "C-3") {
+            if (alturaSelecionada === "Térrea") {
+                medidasParaMostrar = getMedidasParaAltura(altura_tabela6C, 0);
+            } else if (alturaSelecionada === "H ≤ 6") {
+                medidasParaMostrar = getMedidasParaAltura(altura_tabela6C, 1);
+            } else if (alturaSelecionada === "6 < H ≤ 12") {
+                medidasParaMostrar = getMedidasParaAltura(altura_tabela6C, 2);
+            } else if (alturaSelecionada === "12 < H ≤ 23") {
+                medidasParaMostrar = getMedidasParaAltura(altura_tabela6C, 3);
+            } else if (alturaSelecionada === "23 < H ≤ 30") {
+                medidasParaMostrar = getMedidasParaAltura(altura_tabela6C, 4);
+            } else if (alturaSelecionada === "Acima de 30") {
+                medidasParaMostrar = getMedidasParaAltura(altura_tabela6C, 5);
             }
         }
     }
@@ -344,6 +426,12 @@ if (divisaoSelecionada === "A-1" || divisaoSelecionada === "A-2" || divisaoSelec
     for (var i = 0; i < medidas_tabela6B.length; i++) {
         if (alturaMatriz[i][indiceAltura] === 1) {
             medidasParaAltura.push(medidas_tabela6B[i]);
+        }
+    }
+} else if (divisaoSelecionada === "C-1" || divisaoSelecionada === "C-2" || divisaoSelecionada === "C-3") {
+    for (var i = 0; i < medidas_tabela6B.length; i++) {
+        if (alturaMatriz[i][indiceAltura] === 1) {
+            medidasParaAltura.push(medidas_tabela6C[i]);
         }
     }
 }
