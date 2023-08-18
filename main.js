@@ -87,21 +87,22 @@ var medidas_tabela6C = [
 ];
 
 var altura_tabela6C = [
-    [1, 1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1, 1],
-    [0, 0, 0, 1, 1, 1],
-    [1, 1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1, 1],
-    [0, 0, 0, 0, 1, 1],
-    [0, 0, 0, 0, 0, 1]
+    [1,	1,	1,	1,	1,	1],
+    [1,	1,	1,	1,	1,	1],
+    [1,	1,	1,	1,	1,	1],
+    [0,	0,	0,	1,	1,	1],
+    [1,	1,	1,	1,	1,	1],
+    [1,	1,	1,	1,	1,	1],
+    [1,	1,	1,	1,	1,	1],
+    [1,	1,	1,	1,	1,	1],
+    [1,	1,	1,	1,	1,	1],
+    [1,	1,	1,	1,	1,	1],
+    [1,	1,	1,	1,	1,	1],
+    [1,	1,	1,	1,	1,	1],
+    [1,	1,	1,	1,	1,	1],
+    [1,	1,	1,	1,	1,	1],
+    [0,	0,	0,	0,	1,	1],
+    [0,	0,	0,	0,	0,	1]
 ];
 
 
@@ -429,7 +430,7 @@ if (divisaoSelecionada === "A-1" || divisaoSelecionada === "A-2" || divisaoSelec
         }
     }
 } else if (divisaoSelecionada === "C-1" || divisaoSelecionada === "C-2" || divisaoSelecionada === "C-3") {
-    for (var i = 0; i < medidas_tabela6B.length; i++) {
+    for (var i = 0; i < medidas_tabela6C.length; i++) {
         if (alturaMatriz[i][indiceAltura] === 1) {
             medidasParaAltura.push(medidas_tabela6C[i]);
         }
