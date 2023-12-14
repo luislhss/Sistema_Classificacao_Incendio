@@ -112,6 +112,8 @@
 <h2>Contribuição</h2>
 <p>Contribuições são sempre bem-vindas! Se você encontrou um bug ou tem uma sugestão de melhoria, por favor abra uma issue ou envie um pull request.</p>
 
-<h2>Licença</h2>
-<p>Este projeto é licenciado sob a licença GPL.</p>
+## Licença
+
+[Este projeto é licenciado sob a licença GPL](https://www.agtic.ufpr.br/pds-ufpr/ProcessoDemoisellePlugin/guidances/supportingmaterials/tiposLicencasSoftware_AD711F8B.html)
+
 
