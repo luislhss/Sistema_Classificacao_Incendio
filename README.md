@@ -103,3 +103,9 @@
 
 <img src="/assets/img/pt2.png">
 
+<h2>Contribuição</h2>
+<p>Contribuições são sempre bem-vindas! Se você encontrou um bug ou tem uma sugestão de melhoria, por favor abra uma issue ou envie um pull request.</p>
+
+<h2>Licença</h2>
+<p>Este projeto é licenciado sob a licença GPL.</p>
+
