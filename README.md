@@ -21,9 +21,9 @@
 ## Artefatos :
 
    *  [Analise de Requisitos
-   *  [Modelagem
-   *  [Design / Prototipo
+   *  [Diagrama de Caso de Uso
    *  [Arquitetura
+   *  [Design / Prototipo
    *  [Documento de Implantação
 
 ## Tecnologias e Ferramentas de Desenvolvimento :
@@ -33,7 +33,18 @@
     * Java Script
     * Github
     * Figma
-    
+
+## Escopo do Produto :
+
+### Baseando-se em tecnologias web, o sistema terá acesso por meio de navegadores sem requerimento de instalação de software adicional. Os usuários poderão inserir informações relevantes em formulários interativos, que serão processados pela aplicação para determinar os dispositivos de segurança necessários através de relatório gerado
+
+## Funcionalidade do Produto :
+
+ * Formulários interativos: Dados poderão ser inseridos de acordo as informações relacionadas a projetos de segurança contra incêndio presentes no formulário.
+ * Relatório de dispositivos: Exibição dos resultados obtidos de acordo preenchimento do formulário disponível no sistema.
+ * O Sistema não terá necessidade de cadastro
+
+
 
 ## Requisitos Funcionais do Projeto :
 
