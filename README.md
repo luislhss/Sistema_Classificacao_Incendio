@@ -27,9 +27,7 @@
   
   * Para iniciar a aplicação é preciso estar dentro dos diretórios
 
-## Acesso direto a Página para teste :
-
-##  [Teste aqui o Sistema!!](https://luislhss.github.io/Sistema_Classificacao_Incendio/)
+## [Acesso direto a Página para teste :] ##  [Teste aqui o Sistema!!](https://luislhss.github.io/Sistema_Classificacao_Incendio/)
     
 ## Artefatos :
 
