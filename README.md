@@ -44,9 +44,23 @@
  * Relatório de dispositivos: Exibição dos resultados obtidos de acordo preenchimento do formulário disponível no sistema.
  * O Sistema não terá necessidade de cadastro
 
-
-
 ## Requisitos Funcionais do Projeto :
 
   * Sistema deve permitir...
+
+## Diagrama caso de uso :
+
+<img src="/assets/img/casodeuso.jpg">
+
+## Arquitetura :
+
+<img src="/assets/img/arquitetura.jpg">
+
+## Design / Prototipo :
+
+<img src="/assets/img/pt1.png">
+
+## Design / Prototipo Relatório Final :
+
+<img src="/assets/img/pt2.png">
 
