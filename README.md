@@ -50,6 +50,15 @@
 
 ## Requisitos Funcionais do Projeto :
 
+ * Cadastro de Usuários
+   
+   - O sistema projetado não adotará no momento cadastro de usuários.
+
+| Definição | Descrição | Prioridade |
+|:---|:---|:---:|
+| O sistema exibe os dispositivos de segurança necessários de forma clara e compreensível.| Os resultados são apresentados aos usuários em um formato fácil de entender, indicando os dispositivos específicos necessários.    |Alta|
+
+
   * Apresentação de Resultados
     
 | Definição | Descrição | Prioridade |
