@@ -87,6 +87,7 @@
 
 ## Diagrama caso de uso :
 
+| |
 |:---:|
 |<img src="/assets/img/casodeuso.jpg">|
 
