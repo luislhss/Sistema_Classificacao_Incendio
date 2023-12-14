@@ -20,11 +20,11 @@
     
 ## Artefatos :
 
-   *  [Analise de Requisitos
-   *  [Diagrama de Caso de Uso
-   *  [Arquitetura
-   *  [Design / Prototipo
-   *  [Documento de Implantação
+   *  Analise de Requisitos
+   *  Diagrama de Caso de Uso
+   *  Arquitetura
+   *  Design / Prototipo
+   *  Documento de Implantação
 
 ## Tecnologias e Ferramentas de Desenvolvimento :
 
