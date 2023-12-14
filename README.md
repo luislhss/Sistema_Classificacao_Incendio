@@ -36,7 +36,7 @@
 
 ## Escopo do Produto :
 
-### Baseando-se em tecnologias web, o sistema terá acesso por meio de navegadores sem requerimento de instalação de software adicional. Os usuários poderão inserir informações relevantes em formulários interativos, que serão processados pela aplicação para determinar os dispositivos de segurança necessários através de relatório gerado
+* Baseando-se em tecnologias web, o sistema terá acesso por meio de navegadores sem requerimento de instalação de software adicional. Os usuários poderão inserir informações relevantes em formulários interativos, que serão processados pela aplicação para determinar os dispositivos de segurança necessários através de relatório gerado
 
 ## Funcionalidade do Produto :
 
