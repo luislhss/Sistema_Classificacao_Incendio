@@ -17,6 +17,10 @@
 ## [Instruções de uso quando utilizado em diretorio proprio](https://www.youtube.com/watch?v=ohwQe9C7LXs)
   
   * Para iniciar a aplicação é preciso estar dentro dos diretórios
+
+## Acesso direto a Página para teste :
+
+   *  [Analise de Requisitos](https://luislhss.github.io/Sistema_Classificacao_Incendio/)
     
 ## Artefatos :
 
