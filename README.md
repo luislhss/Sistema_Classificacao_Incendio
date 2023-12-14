@@ -4,7 +4,7 @@
 
 ### Aplicacao desenvolvida para avaliação da disciplina: TCC II do curso de Engenharia de Software da Unicesumar. O repositório se encontra em desenvolvimento, contendo os projetos de frontend e backend da aplicação juntos.
 
-### Uma aplicação desenvolvida para gerar relatórios dos dispositivos de segurança contra incêndio de acordo Decreto Estadual da Bahia n° 16.302, utilizando as tecnologias: HTML, CSS e Java script.
+### Uma aplicação desenvolvida para gerar relatórios dos dispositivos de segurança contra incêndio de acordo [Decreto Estadual da Bahia n° 16.302](http://www.cbm.ba.gov.br/sites/default/files/documentos/2018-10/decreto_no_16.302_de_27_ago_15_-_regulamenta_a_lei_no_12.929.pdf), utilizando as tecnologias: HTML, CSS e Java script.
 
 ## Aluno :
 
