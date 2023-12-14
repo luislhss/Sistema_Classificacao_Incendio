@@ -54,9 +54,21 @@
    
    - O sistema projetado não adotará no momento cadastro de usuários.
 
+ * Login de UsuáriosCadastro de Usuários
+   
+   - Não havendo cadastro de usuários, o sistema projetado não usará de login.
+
+  * Inserção de Dados no Sistema
+
 | Definição | Descrição | Prioridade |
 |:---|:---|:---:|
-| O sistema exibe os dispositivos de segurança necessários de forma clara e compreensível.| Os resultados são apresentados aos usuários em um formato fácil de entender, indicando os dispositivos específicos necessários.    |Alta|
+| Os usuários podem inserir informações relacionadas a um projeto de segurança contra incêndio.| O sistema fornece formulários interativos onde os usuários podem inserir detalhes sobre o projeto, como tipo de edificação, área, capacidade, entre outros. |Alta|
+
+  * Processamento de Dados
+
+| Definição | Descrição | Prioridade |
+|:---|:---|:---:|
+| O sistema processa os dados inseridos para determinar os dispositivos de segurança necessários.| Com base nas informações fornecidas, o sistema utiliza a lógica interna para calcular e determinar os dispositivos de segurança contra incêndio necessários. |Alta|
 
 
   * Apresentação de Resultados
@@ -64,6 +76,12 @@
 | Definição | Descrição | Prioridade |
 |:---|:---|:---:|
 | O sistema exibe os dispositivos de segurança necessários de forma clara e compreensível.| Os resultados são apresentados aos usuários em um formato fácil de entender, indicando os dispositivos específicos necessários.    |Alta|
+
+  * Escolha de Abordagem de Desenvolvimento
+
+| Definição | Descrição | Prioridade |
+|:---|:---|:---:|
+| O sistema adota a abordagem de desenvolvimento por estrutura de matrizes.| Limitação do sistema ao uso de estrutura de dados de matrizes |Média|
 
 
 
