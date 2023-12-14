@@ -15,8 +15,7 @@
 ### Este projeto visa migrar de soluções baseadas no Microsoft Office para uma aplicação web que utiliza HTML, CSS e JavaScript, com o objetivo de otimizar a análise de dispositivos de segurança contra incêndio. Para atingir esse fim, são definidos objetivos específicos, como analisar critérios de classificação, coletar dados em uma estrutura de matrizes e identificar requisitos funcionais e não funcionais, obtendo como resultado da aplicação criada, um relatório das medidas necessárias a serem adotadas, baseando-se nas informações definidas pelo usuário. A justificativa ressalta a importância de adaptar as soluções tecnológicas às necessidades em constante evolução da segurança contra incêndio. A aplicação proporcionará duas abordagens de desenvolvimento e será acessível através de navegadores, sem necessidade de instalação adicional. A arquitetura envolverá o front-end (HTML, CSS, JavaScript) e o back-end (JavaScript), com armazenamento temporário de dados em estruturas de matriz. Isso permitirá uma análise eficiente e atenderá às necessidades de mobilidade e flexibilidade no campo de segurança contra incêndio.
 
 
-
-<h2>O Mínimo produto viável(MVP) contempla 03 atividades principais.</h2>
+<h2>O Mínimo Produto Viável (MVP) contempla 03 atividades principais:</h2>
 <ul>
 	<li>1. usuário insere informações da edificação de acordo itens registrados no formulário.</li>
 	<li>2. O sistema faz a correspondência das informações numa estrutura de dados tipo matriz.</li>
