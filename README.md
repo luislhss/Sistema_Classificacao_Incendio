@@ -52,10 +52,10 @@
 
   * Sistema deve permitir...
 
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
+| Definição | Descrição | Prioridade |
+|:---|:---|:---:|
+| O sistema exibe os dispositivos de segurança necessários de forma clara e compreensível.| Os resultados são apresentados aos usuários em um formato fácil de entender, indicando os dispositivos específicos necessários.    |Alta|
+
 
 
 ## Diagrama caso de uso :
