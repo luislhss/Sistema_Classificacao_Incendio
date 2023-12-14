@@ -50,8 +50,7 @@
 
 ## Requisitos Funcionais do Projeto :
 
-  * Sistema deve permitir...
-
+  * Apresentação de Resultados
 | Definição | Descrição | Prioridade |
 |:---|:---|:---:|
 | O sistema exibe os dispositivos de segurança necessários de forma clara e compreensível.| Os resultados são apresentados aos usuários em um formato fácil de entender, indicando os dispositivos específicos necessários.    |Alta|
