@@ -116,6 +116,6 @@
 
 [Este projeto é licenciado sob a licença GPL](https://www.agtic.ufpr.br/pds-ufpr/ProcessoDemoisellePlugin/guidances/supportingmaterials/tiposLicencasSoftware_AD711F8B.html)
 
-(https://www.gnu.org/licenses/gpl-3.0.txt)
+* GPL 3.0: https://www.gnu.org/licenses/gpl-3.0.txt
 
 
