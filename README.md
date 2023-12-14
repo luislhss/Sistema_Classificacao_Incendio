@@ -51,6 +51,10 @@
 ## Requisitos Funcionais do Projeto :
 
   * Sistema deve permitir...
+| Primeiro cabeçalho | Segundo cabeçalho |
+| — — — — — — — — — — | — — — — — — — — — — |
+| Célula de conteúdo | Célula de conteúdo |
+| Célula de conteúdo | Célula de conteúdo |
 
 ## Diagrama caso de uso :
 
