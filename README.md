@@ -16,7 +16,7 @@
 
 ### Este projeto visa migrar de soluções baseadas no Microsoft Office para uma aplicação web que utiliza HTML, CSS e JavaScript, com o objetivo de otimizar a análise de dispositivos de segurança contra incêndio. Para atingir esse fim, são definidos objetivos específicos, como analisar critérios de classificação, coletar dados em uma estrutura de matrizes e identificar requisitos funcionais e não funcionais, obtendo como resultado da aplicação criada, um relatório das medidas necessárias a serem adotadas, baseando-se nas informações definidas pelo usuário. A justificativa ressalta a importância de adaptar as soluções tecnológicas às necessidades em constante evolução da segurança contra incêndio. A aplicação proporcionará duas abordagens de desenvolvimento e será acessível através de navegadores, sem necessidade de instalação adicional. A arquitetura envolverá o front-end (HTML, CSS, JavaScript) e o back-end (JavaScript), com armazenamento temporário de dados em estruturas de matriz. Isso permitirá uma análise eficiente e atenderá às necessidades de mobilidade e flexibilidade no campo de segurança contra incêndio.
 
-## [Instruções de uso](https://www.youtube.com/watch?v=ohwQe9C7LXs)
+## [Instruções de uso quando utilizado em diretorio proprio](https://www.youtube.com/watch?v=ohwQe9C7LXs)
 
 ## Artefatos :
 
