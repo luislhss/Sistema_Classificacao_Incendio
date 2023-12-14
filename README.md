@@ -87,9 +87,7 @@
 
 ## Diagrama caso de uso :
 
-| |
-|:---:|
-|<img src="/assets/img/casodeuso.jpg">|
+<img src="/assets/img/casodeuso.jpg">
 
 ## Arquitetura :
 
