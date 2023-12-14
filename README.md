@@ -51,10 +51,12 @@
 ## Requisitos Funcionais do Projeto :
 
   * Sistema deve permitir...
-| Primeiro cabeçalho | Segundo cabeçalho |
-| — — — — — — — — — — | — — — — — — — — — — |
-| Célula de conteúdo | Célula de conteúdo |
-| Célula de conteúdo | Célula de conteúdo |
+
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
+
 
 ## Diagrama caso de uso :
 
