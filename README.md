@@ -97,6 +97,8 @@
 
 <img src="/assets/img/pt1.png">
 
+  *  [Visualização do protótipo pelo Figma](https://www.figma.com/file/gpyzHlWreJBSB2KYhJUwqG/Modelo-Classifica%C3%A7%C3%A3o-de-dispositivos?type=design&node-id=0%3A1&mode=design&t=yDLCPypyilNOZszq-1)
+
 ## Design / Prototipo Relatório Final :
 
 <img src="/assets/img/pt2.png">
