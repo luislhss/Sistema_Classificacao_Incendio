@@ -14,7 +14,8 @@
 
 - [Janaina Aparecida de Freitas](https://www.escavador.com/sobre/2313580/janaina-aparecida-de-freitas)
 
-## Trabalho de conclusão de curso (Tema com Especificação de software) :
+## Trabalho de conclusão de curso 
+## (Tema com Especificação de software) :
 
 - [Acesso a leitura do TCC pelo Drive](https://drive.google.com/file/d/1fLq28JgDkZIeycoV9Z2eZ6C52tlIkNvO/view?usp=sharing)
 
