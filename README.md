@@ -14,7 +14,9 @@
 
 - [Janaina Aparecida de Freitas](https://www.escavador.com/sobre/2313580/janaina-aparecida-de-freitas)
 
+
 - [Acesso ao TCC](https://docs.google.com/document/d/1XD7jNvm7g4aWhQ2LgjqoJpxxibw0KrhTzohMPCSSDKE/edit?usp=sharing)
+
 
 ### Este projeto trata-se da criação de uma aplicação web com utilização das tecnologias: HTML, CSS e JavaScript, visando a geração de relatório identificando os dispositivos de segurança contra incêndio nescessários para serem projetados em um edificação, otimizando a análise das normas especificas que definem os metodos de escolha. Para atingir esse fim, toda metodologia utilizada leva a estruturar os dados na forma de matriz obtendo como resultado o relatório final com as medidas necessárias a serem adotadas.
 
