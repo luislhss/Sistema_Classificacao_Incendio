@@ -3,14 +3,7 @@
 ## Acesso direto a Página para teste : [Teste aqui o Sistema!!](https://luislhss.github.io/Sistema_Classificacao_Incendio/)
 
 
-
-<object width="425" height="350">
-  <param name="movie" value="https://www.youtube.com/watch?v=dnWEe5LwT1I" />
-  <param name="wmode" value="transparent" />
-  <embed src="https://www.youtube.com/watch?v=dnWEe5LwT1I"
-         type="application/x-shockwave-flash"
-         wmode="transparent" width="425" height="350" />
-</object>
+https://github.com/luislhss/Sistema_Classificacao_Incendio/assets/26752702/fe394ab7-dc5f-4626-b8d5-03016231800c
 
 
 ### Aplicacao desenvolvida para avaliação da disciplina: TCC II do curso de [Engenharia de Software da Unicesumar](https://inscricoes.unicesumar.edu.br/curso/engenharia-de-software?utm_content=&utm_term=engenharia%20de%20software&utm_campaign=U-EAD-GG-ONG-CAP-ENG-CONV-PADR-BRAN-BR-PESQ-CPC&utm_source=adwords&utm_medium=cpc&hsa_acc=7334726990&hsa_cam=18609302801&hsa_grp=145533609809&hsa_ad=629994118934&hsa_src=g&hsa_tgt=aud-828852820731:kwd-31430410&hsa_kw=engenharia%20de%20software&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiA7OqrBhD9ARIsAK3UXh3hTyFb7bGzxXEJcgIlEYUin8ZiY3h4ICbi7Mg92xCB68I55ecvQzMaAsmmEALw_wcB). O repositório se encontra em desenvolvimento, contendo os projetos de frontend e backend da aplicação juntos.
