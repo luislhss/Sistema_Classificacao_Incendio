@@ -36,8 +36,7 @@ https://github.com/luislhss/Sistema_Classificacao_Incendio/assets/26752702/fe394
 	</ul>
 
 ## [Instruções de uso quando utilizado em diretorio proprio](https://www.youtube.com/watch?v=ohwQe9C7LXs)
-  
-  * Para iniciar a aplicação é preciso estar dentro dos diretórios
+Para iniciar a aplicação é preciso estar dentro dos diretórios
 
 ## Acesso direto a Página para teste : [Teste aqui o Sistema!!](https://luislhss.github.io/Sistema_Classificacao_Incendio/)
     
@@ -58,8 +57,7 @@ https://github.com/luislhss/Sistema_Classificacao_Incendio/assets/26752702/fe394
     - Figma
 
 ## :pushpin: Escopo do Produto :
-
-* Baseando-se em tecnologias web, o sistema terá acesso por meio de navegadores sem requerimento de instalação de software adicional. Os usuários poderão inserir informações relevantes em formulários interativos, que serão processados pela aplicação para determinar os dispositivos de segurança necessários através de relatório gerado
+Baseando-se em tecnologias web, o sistema terá acesso por meio de navegadores sem requerimento de instalação de software adicional. Os usuários poderão inserir informações relevantes em formulários interativos, que serão processados pela aplicação para determinar os dispositivos de segurança necessários através de relatório gerado
 
 ## :pushpin: Funcionalidade do Produto :
 
