@@ -51,11 +51,11 @@ https://github.com/luislhss/Sistema_Classificacao_Incendio/assets/26752702/fe394
 
 ## :pushpin: Tecnologias e Ferramentas de Desenvolvimento :
 
-    * HTML
-    * CSS
-    * Java Script
-    * Github
-    * Figma
+    - HTML
+    - CSS
+    - Java Script
+    - Github
+    - Figma
 
 ## :pushpin: Escopo do Produto :
 
