@@ -102,15 +102,15 @@ Baseando-se em tecnologias web, o sistema terá acesso por meio de navegadores s
 
 
 
-## Diagrama caso de uso :
+## :pushpin: Diagrama caso de uso :
 
 <img src="/assets/img/casodeuso.jpg">
 
-## Arquitetura :
+## :pushpin: Arquitetura :
 
 <img src="/assets/img/arquitetura.jpg">
 
-## Design / Prototipo :
+## :pushpin: Design / Prototipo :
 
 <img src="/assets/img/pt1.png">
 
