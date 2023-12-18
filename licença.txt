@@ -1,4 +1,10 @@
-copyright “©” 2023, Version 1.0, Luiz Henrique Santos da Silva. luislhss@gmail.com    
+
+MIT License
+
+Copyright (c) 2023 Luiz Henrique da Silva
+luislhss@gmail.com
+@luislhss
+
 
    Aviso de licença:
 
