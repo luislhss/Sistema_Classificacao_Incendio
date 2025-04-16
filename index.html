@@ -4,6 +4,11 @@
     <title>Classificação de Segurança</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <!-- Adicionando Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Adicionando jsPDF para geração de PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
     <fieldset>
@@ -75,6 +80,22 @@
 
     <fieldset>
             <div id="medidasContainer"></div>
+            
+            <!-- Novo contêiner para botões de compartilhamento -->
+            <div id="compartilhamentoContainer" class="compartilhamento-container" style="display: none;">
+                <h3>Compartilhar Relatório:</h3>
+                <div class="botoes-compartilhamento">
+                    <button type="button" class="btn-compartilhar" onclick="abrirModalEmail()">
+                        <i class="fas fa-envelope"></i> E-mail
+                    </button>
+                    <button type="button" class="btn-compartilhar" onclick="abrirModalWhatsApp()">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </button>
+                    <button type="button" class="btn-compartilhar" onclick="gerarPDF()">
+                        <i class="fas fa-file-pdf"></i> PDF
+                    </button>
+                </div>
+            </div>
     </fieldset>
 
         </div>
@@ -82,6 +103,41 @@
 
         </form>
         
+    <!-- Modal para compartilhamento por e-mail -->
+    <div id="modalEmail" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal('modalEmail')">&times;</span>
+            <h3>Compartilhar por E-mail</h3>
+            <div class="form-group">
+                <label for="emailDestinatario">E-mail do destinatário:</label>
+                <input type="email" id="emailDestinatario" placeholder="exemplo@email.com" required>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn-enviar" onclick="enviarEmail()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para compartilhamento por WhatsApp -->
+    <div id="modalWhatsApp" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal('modalWhatsApp')">&times;</span>
+            <h3>Compartilhar por WhatsApp</h3>
+            <div class="form-group">
+                <label for="dddWhatsApp">DDD:</label>
+                <input type="text" id="dddWhatsApp" placeholder="11" maxlength="2" required>
+            </div>
+            <div class="form-group">
+                <label for="numeroWhatsApp">Número:</label>
+                <input type="text" id="numeroWhatsApp" placeholder="987654321" maxlength="9" required>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn-enviar" onclick="enviarWhatsApp()">Enviar</button>
+            </div>
+        </div>
+    </div>
+        
     <script src="main.js"></script>
+    <script src="compartilhamento.js"></script>
 </body>
 </html>
