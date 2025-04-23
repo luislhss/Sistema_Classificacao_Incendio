@@ -7,7 +7,7 @@
     <!-- Adicionando Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Adicionando jsPDF para geração de PDF -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=KNT4KCdJ-ScYlnxPWO8PD1Y6s2qwsgqP3_LPgo-YJl2vjNaiRIbjh_cdyoQiE3BiCUC81SrN4NW-jh5ReVz3nUizcQP4ngWxWMgpluXPdAz6KFdxV3YMzs8d1EdZWLbmXTRWWMmj4kjnfWLch8Z-5zkPQ8FAGgepHHawgiJuOKeZfc_r6YceN5DzAQp87XG0NbZpinPuImsMaFEGr2E_8UFkFsojoJmDNlpvgSw-EZCc5xhGGNUjynJnus25YAV7RySx4NbBxaLSgUtzz0F0XwAOlI6BBaZrvS1aziaGZCwq4cxHV_40b-BMkI1jHTtpAyZw8DYeAvM3OfsfiBf2XsL-W7J4VGPBy3JKTIDqMFeKCG3rgOjCtDbDjO4f0TcF_gES_0E71OUHb_yzIcrSpsM7oWPCTQBCPaHJqt05NL9iYIv9wMWbp4o5nnbhyjIloCzIV7sj1lh2JtijvOBSFCyvO4soZAGsJUpvhdDvcgM1xw5pDxZxxZjgSxkZkmh3RbsLVRODHVaDcHc2vVpoN8cWRJ9WJ_kmQI3AD1jGc-T44OQZx_eQEgVv5WzqP9Vovx5IwPyFEOksZMm3WX9O-qPZlVtSaIktPYxd9iSgHFysnC11BTfgbuWYj7eTL0eInE7xrfRn4KMkoorlkWpL70eZxjjlVK9m5RYsC90leM7mkEdEKL5V3BIcJFli0cNMJGAqNziWmsUlW6VHaxx1FiCkCpfjfUWcQ_moFIh5FFOb6suUUjoQTcyyIyDi-ruH--2EngjmGUBg-R3AJSGpomaMWuarq-7Ir1uDyPBibIVPeN06oZgJgdkDY3goMCjv8qrbAyW7C-EEQGY8gSqUpzmvhZO6DSpsfyVxX4khxss" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
@@ -134,6 +134,50 @@
             <div class="form-group">
                 <button type="button" class="btn-enviar" onclick="enviarWhatsApp()">Enviar</button>
             </div>
+        </div>
+    </div>
+    
+    <!-- Modal para feedback -->
+    <div id="modalFeedback" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal('modalFeedback')">&times;</span>
+            <h3>Enviar Feedback</h3>
+            <div class="form-group">
+                <label for="mensagemFeedback">Sua mensagem:</label>
+                <textarea id="mensagemFeedback" rows="5" placeholder="Digite sua mensagem, sugestão ou reporte de erro"></textarea>
+                <p class="dica">Pressione Ctrl+Enter para enviar</p>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn-enviar" onclick="enviarFeedback()">Enviar</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal para informações -->
+    <div id="modalInfo" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal('modalInfo')">&times;</span>
+            <h3>Sobre o Sistema</h3>
+            <div class="info-content">
+                <p><strong>Sistema de Classificação de Segurança Contra Incêndio</strong></p>
+                <p>Este sistema permite classificar edificações de acordo com o Decreto da Bahia 16.302 e determinar as medidas de segurança necessárias.</p>
+                <p><strong>Desenvolvedor:</strong> Luiz Henrique Santos da Silva</p>
+                <p><strong>Contato:</strong> <a href="mailto:luislhss@gmail.com">luislhss@gmail.com</a></p>
+                <p><strong>Instagram:</strong> <a href="https://instagram.com/luislhss" target="_blank">@luislhss</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/luislhss/Sistema_Classificacao_Incendio" target="_blank">github.com/luislhss/Sistema_Classificacao_Incendio</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Seção de feedback e informações -->
+    <div id="feedbackInfoContainer" class="feedback-info-container">
+        <div class="botoes-feedback-info">
+            <button type="button" class="btn-feedback" onclick="abrirModalFeedback()">
+                <i class="fas fa-comment"></i> Enviar Feedback
+            </button>
+            <button type="button" class="btn-info" onclick="abrirModalInfo()">
+                <i class="fas fa-info-circle"></i> Sobre o Sistema
+            </button>
         </div>
     </div>
         

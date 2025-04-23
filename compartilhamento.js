@@ -72,8 +72,35 @@ function enviarEmail() {
     fecharModal('modalEmail');
 }
 
+// Função para verificar se o dispositivo é móvel
+function ehDispositivoMovel() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
 // Função para enviar relatório por WhatsApp
 function enviarWhatsApp() {
+    // Verificar se é dispositivo móvel
+    const ehMovel = ehDispositivoMovel();
+    
+    // Obter conteúdo do relatório
+    const conteudoRelatorio = obterConteudoRelatorio();
+    
+    // Preparar a mensagem
+    const mensagem = encodeURIComponent(conteudoRelatorio);
+    
+    if (ehMovel) {
+        // Em dispositivos móveis, oferece opção de abrir o app diretamente
+        const usarContatos = confirm('Deseja abrir o WhatsApp para selecionar um contato? Clique em "Cancelar" para digitar o número manualmente.');
+        
+        if (usarContatos) {
+            // Abrir WhatsApp diretamente sem número específico
+            window.location.href = `whatsapp://send?text=${mensagem}`;
+            fecharModal('modalWhatsApp');
+            return;
+        }
+    }
+    
+    // Fluxo padrão para digitar número manualmente
     const ddd = document.getElementById('dddWhatsApp').value.trim();
     const numero = document.getElementById('numeroWhatsApp').value.trim();
     
@@ -83,17 +110,15 @@ function enviarWhatsApp() {
         return;
     }
     
-    // Obter conteúdo do relatório
-    const conteudoRelatorio = obterConteudoRelatorio();
-    
     // Formatar número completo
     const numeroCompleto = `55${ddd}${numero}`;
     
-    // Preparar a mensagem
-    const mensagem = encodeURIComponent(conteudoRelatorio);
-    
     // Abrir WhatsApp Web ou App
-    window.open(`https://wa.me/${numeroCompleto}?text=${mensagem}`, '_blank');
+    if (ehMovel) {
+        window.location.href = `whatsapp://send?phone=${numeroCompleto}&text=${mensagem}`;
+    } else {
+        window.open(`https://wa.me/${numeroCompleto}?text=${mensagem}`, '_blank');
+    }
     
     // Fechar o modal
     fecharModal('modalWhatsApp');
@@ -141,6 +166,44 @@ function gerarPDF() {
         // Salvar o PDF
         doc.save('Relatório_Medidas_Segurança.pdf');
     });
+}
+
+// Função para enviar feedback
+function enviarFeedback() {
+    const mensagem = document.getElementById('mensagemFeedback').value.trim();
+    
+    // Validação básica
+    if (!mensagem) {
+        alert('Por favor, escreva uma mensagem antes de enviar.');
+        return;
+    }
+    
+    // Preparar o assunto e corpo do e-mail
+    const assunto = encodeURIComponent('Feedback - Sistema de Classificação de Incêndio');
+    const corpo = encodeURIComponent(mensagem);
+    
+    // Abrir cliente de e-mail com endereço do desenvolvedor
+    window.location.href = `mailto:luislhss@gmail.com?subject=${assunto}&body=${corpo}`;
+    
+    // Fechar o modal
+    fecharModal('modalFeedback');
+    
+    // Limpar o campo de mensagem
+    document.getElementById('mensagemFeedback').value = '';
+    
+    // Mostrar confirmação
+    alert('Obrigado pelo seu feedback!');
+}
+
+// Função para abrir modal de feedback
+function abrirModalFeedback() {
+    document.getElementById('modalFeedback').style.display = 'block';
+    document.getElementById('mensagemFeedback').focus();
+}
+
+// Função para abrir modal de informações
+function abrirModalInfo() {
+    document.getElementById('modalInfo').style.display = 'block';
 }
 
 // Função auxiliar para obter o conteúdo formatado do relatório
@@ -198,4 +261,85 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('numeroWhatsApp').addEventListener('input', function() {
         this.value = this.value.replace(/[^0-9]/g, '');
     });
+    
+    // Adicionar evento para tecla Enter no campo de feedback
+    if (document.getElementById('mensagemFeedback')) {
+        document.getElementById('mensagemFeedback').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && e.ctrlKey) {
+                enviarFeedback();
+            }
+        });
+    }
+    
+    // Adicionar seção de feedback e informações se não existir
+    if (!document.getElementById('feedbackInfoContainer')) {
+        adicionarSecaoFeedbackInfo();
+    }
 });
+
+// Função para adicionar seção de feedback e informações
+function adicionarSecaoFeedbackInfo() {
+    // Criar container para os botões de feedback e info
+    const container = document.createElement('div');
+    container.id = 'feedbackInfoContainer';
+    container.className = 'feedback-info-container';
+    
+    // Adicionar HTML para os botões
+    container.innerHTML = `
+        <div class="botoes-feedback-info">
+            <button type="button" class="btn-feedback" onclick="abrirModalFeedback()">
+                <i class="fas fa-comment"></i> Enviar Feedback
+            </button>
+            <button type="button" class="btn-info" onclick="abrirModalInfo()">
+                <i class="fas fa-info-circle"></i> Sobre o Sistema
+            </button>
+        </div>
+    `;
+    
+    // Adicionar ao final do body
+    document.body.appendChild(container);
+    
+    // Criar modal de feedback
+    const modalFeedback = document.createElement('div');
+    modalFeedback.id = 'modalFeedback';
+    modalFeedback.className = 'modal';
+    
+    modalFeedback.innerHTML = `
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal('modalFeedback')">&times;</span>
+            <h3>Enviar Feedback</h3>
+            <div class="form-group">
+                <label for="mensagemFeedback">Sua mensagem:</label>
+                <textarea id="mensagemFeedback" rows="5" placeholder="Digite sua mensagem, sugestão ou reporte de erro"></textarea>
+                <p class="dica">Pressione Ctrl+Enter para enviar</p>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn-enviar" onclick="enviarFeedback()">Enviar</button>
+            </div>
+        </div>
+    `;
+    
+    // Criar modal de informações
+    const modalInfo = document.createElement('div');
+    modalInfo.id = 'modalInfo';
+    modalInfo.className = 'modal';
+    
+    modalInfo.innerHTML = `
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal('modalInfo')">&times;</span>
+            <h3>Sobre o Sistema</h3>
+            <div class="info-content">
+                <p><strong>Sistema de Classificação de Segurança Contra Incêndio</strong></p>
+                <p>Este sistema permite classificar edificações de acordo com o Decreto da Bahia 16.302 e determinar as medidas de segurança necessárias.</p>
+                <p><strong>Desenvolvedor:</strong> Luiz Henrique Santos da Silva</p>
+                <p><strong>Contato:</strong> <a href="mailto:luislhss@gmail.com">luislhss@gmail.com</a></p>
+                <p><strong>Instagram:</strong> <a href="https://instagram.com/luislhss" target="_blank">@luislhss</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/luislhss/Sistema_Classificacao_Incendio" target="_blank">github.com/luislhss/Sistema_Classificacao_Incendio</a></p>
+            </div>
+        </div>
+    `;
+    
+    // Adicionar modais ao body
+    document.body.appendChild(modalFeedback);
+    document.body.appendChild(modalInfo);
+}

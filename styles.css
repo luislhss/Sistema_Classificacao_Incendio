@@ -246,3 +246,102 @@ th {
         justify-content: center;
     }
 }
+
+/* Novos estilos para a seção de feedback e informações */
+.feedback-info-container {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.botoes-feedback-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn-feedback, .btn-info {
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    flex: 1;
+    justify-content: center;
+}
+
+.btn-feedback:hover, .btn-info:hover {
+    background-color: #e69500;
+}
+
+.btn-feedback i, .btn-info i {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para o textarea de feedback */
+textarea#mensagemFeedback {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 100px;
+    font-family: Arial, sans-serif;
+}
+
+.dica {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    text-align: right;
+    font-style: italic;
+}
+
+/* Estilos para o conteúdo de informações */
+.info-content {
+    text-align: left;
+    line-height: 1.5;
+}
+
+.info-content p {
+    margin: 10px 0;
+}
+
+.info-content a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+.info-content a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes responsivos para a seção de feedback e informações */
+@media (max-width: 600px) {
+    .feedback-info-container {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .botoes-feedback-info {
+        flex-direction: column;
+    }
+    
+    .btn-feedback, .btn-info {
+        width: 100%;
+    }
+}
